@@ -1,0 +1,20 @@
+{
+  "name": "rival-s1-client",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.2.4",
+    "@hey-api/openapi-ts": "^0.52.11",
+    "dualsense-ts": "^5.5.0",
+    "node-hid": "^3.1.0"
+  },
+  "scripts": {
+    "generate-client": "RIVAL_ENDPOINT=http://192.168.1.204:8000 bun run openapi-ts"
+  }
+}
